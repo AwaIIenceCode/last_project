@@ -259,6 +259,43 @@ img {
     color: var(--primary-color);
     cursor: pointer;
 }
+/* Стили для темной темы */
+body[data-theme="dark"] {
+    --primary-color: #f4f4f4;
+    --secondary-color: #ddd;
+    --ternary-color: #bbb;
+    --light-color: #333;
+    --light-secondary-color: #444;
+    --light-ternary-color: #555;
+    --overlay-color: rgba(0, 0, 0, 0.9);
+    background-color: #222;
+    color: var(--light-color);
+}
+
+body[data-theme="dark"] a {
+    color: var(--light-secondary-color);
+}
+
+body[data-theme="dark"] .btn {
+    background-color: var(--ternary-color);
+    color: #fff;
+}
+
+body[data-theme="dark"] .btn:hover {
+    background-color: var(--secondary-color);
+}
+body[data-theme="dark"] .section-footer {
+    background-color: #111; /* Очень тёмный фон */
+    color: #ccc; /* Цвет текста чуть светлее */
+}
+
+body[data-theme="dark"] .section-footer a {
+    color: #888; /* Цвет ссылок в футере */
+}
+
+body[data-theme="dark"] .section-footer a:hover {
+    color: #aaa; /* Ссылки подсвечиваются при наведении */
+}
 
 @media (max-width: 768px) {
     .section-showcase .container {
